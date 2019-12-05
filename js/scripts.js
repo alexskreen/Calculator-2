@@ -21,6 +21,7 @@ $(document).ready(function() {
     var number1 = parseInt($("#input1").val());
     var number2 = parseInt($("#input2").val());
     var operator = $("input:radio[name=operator]:checked").val();
+
     var result;
     if (operator === "add") {
       result = add(number1, number2);
@@ -32,5 +33,11 @@ $(document).ready(function() {
       result = divide(number1, number2);
     }
     $("#output").text(result);
+
+
   });
+  $(".calcButton").click(function() {
+  console.log(this.value);
+  $("#screen").value=this.value;
+});
 });

@@ -19,9 +19,10 @@
           <label for="input2">2nd number:</label>
           <input id="input2" class="form-control" type="text">
         </div>
+        <p>
         <div class="radio">
           <label>
-            <input type="radio" name="operator" value="add" checked>
+            <input type="radio" name="operator" value="add">
             add
           </label>
         </div>
@@ -44,10 +45,45 @@
           </label>
         </div>
         <button type="submit" class="btn">Go!</button>
+
+        <div class="calculator">
+
+    <input type="text" id="screen" class="calculator-screen" value="" disabled />
+
+    <div class="calculator-keys">
+
+      <button type="button" class="operator calcButton" value="+">+</button>
+      <button type="button" class="operator calcButton" value="-">-</button>
+      <button type="button" class="operator calcButton" value="*">*</button>
+      <button type="button" class="operator calcButton" value="/">/</button>
+
+      <button type="button" class="calcButton" value="7">7</button>
+      <button type="button" class="calcButton" value="8">8</button>
+      <button type="button" class="calcButton" value="9">9</button>
+
+
+      <button type="button" class="calcButton" class="calcButton" value="4">4</button>
+      <button type="button" class="calcButton" value="5">5</button>
+      <button type="button" class="calcButton" value="6">6</button>
+
+
+      <button type="button" class="calcButton" value="1">1</button>
+      <button type="button" class="calcButton" value="2">2</button>
+      <button type="button" class="calcButton" value="3">3</button>
+
+
+      <button type="button"  class="calcButton" value="0">0</button>
+      <button type="button" class="calcButton" value=".">.</button>
+      <button type="button" class="all-clear" value="all-clear">AC</button>
+
+      <button type="button" class="equal-sign operator" value="=">=</button>
+
+    </div>
+  </div>
       </form>
       <div id="output">
-
       </div>
+
     </div>
   </body>
 </html>
